@@ -10,5 +10,9 @@
         android:title="@string/right"/>
     <item  android:id="@+id/zoom"
         android:title="@string/zoom"/>
+    <item  android:id="@+id/rotate"
+        android:title="@string/rotate"/>
+    <item  android:id="@+id/fade"
+        android:title="@string/fade"/>
 
 </menu>

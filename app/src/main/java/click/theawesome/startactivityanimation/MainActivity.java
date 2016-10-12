@@ -1,12 +1,10 @@
 package click.theawesome.startactivityanimation;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.zoom:
                 startActivityZoom();
                 return true;
+            case R.id.rotate:
+                startActivityRotate();
+                return true;
+            case R.id.fade:
+                startActivityFade();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -67,4 +71,11 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
     }
 
+    private void startActivityRotate() {
+        overridePendingTransition(R.anim.rotate_in, R.anim.rotate_out);
+    }
+
+    private void startActivityFade() {
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 }
