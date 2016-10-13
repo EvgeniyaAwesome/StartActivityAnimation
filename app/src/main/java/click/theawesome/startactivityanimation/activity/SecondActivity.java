@@ -1,7 +1,9 @@
-package click.theawesome.startactivityanimation;
+package click.theawesome.startactivityanimation.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import click.theawesome.startactivityanimation.R;
 
 public class SecondActivity extends AppCompatActivity {
 
